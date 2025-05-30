@@ -76,6 +76,15 @@ The Alloy service is configured to process syslog input with the following featu
   - Facility → facility
   - Connection details → connection_host, ip
   - Host IP tracking
+ 
+## Host/Client Configuration
+- Unraid - set syslog server to point to the stack's IP:PORT TCP(1601)/UDP(1514) 
+- Raspbian OS - Install rsyslog and create a config containing the stack's information. Sample below:
+
+/etc/rsyslog.d/99-loki.conf
+```
+*.*  @192.168.1.164:1514
+```
 
 ## Contributing
 
