@@ -86,6 +86,13 @@ The Alloy service is configured to process syslog input with the following featu
 *.*  @192.168.1.164:1514
 ```
 
+## Grafana Dashboard Config
+
+Added a Grafana dashboard json file that can be use alongside this stack. Based on [Grafana - Syslog](https://grafana.com/grafana/dashboards/16061-syslog/). Updated the labels and variables to make it work on my setup.
+
+![title](misc/dashboard-demo.png)
+
+
 ## Contributing
 
 Contributions and suggestiong are welcome! Please feel free to submit a Pull Request.
